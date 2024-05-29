@@ -10,6 +10,7 @@ app_ui = ui.page_fluid(
 def server(input, output, session):
     @output
     @render.text
+    print("New data")
     def txt():
         return f"n*2 is {input.n() * 2}"
 
